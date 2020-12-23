@@ -12,10 +12,10 @@ namespace NUnitTest
 		private IMongoCollection<ThreadEntry> Collection;
 		private MongoClientService ClientService;
 		private int Exceptions = 0;
-		private int MaxThreads = 100;
+		private int MaxThreads = 7000;
 		private int FinishedThread = 0;
 		private readonly Random Random = new Random();
-		private int MaxWait = 50;
+		private int MaxWait = 1000;
 		private int Iterations = 10;
 
 		public ConnectionTest()
